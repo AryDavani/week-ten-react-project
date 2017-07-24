@@ -30,3 +30,9 @@
 .flex {
   display: flex;
 }
+
+.list-item {
+  margin: 10px 0px;
+  background-color: rgb(0, 1, 79);
+  padding: 20px;
+}
