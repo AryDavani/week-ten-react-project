@@ -12,14 +12,21 @@ class App extends Component {
     super(props);
 
     this.state = {
-
+      name: [],
+      artist: [],
+      song: [],
+      notes: []
     }
   }
 
   render() {
     return (
       <div className="App container-fluid">
-        <h1>is this thing working</h1>
+        <NavBar />
+        <div className="flex">
+          <PlayListForm />
+          <PlayList />
+        </div>
       </div>
     );
   }
