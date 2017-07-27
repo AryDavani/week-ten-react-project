@@ -22,7 +22,9 @@ class PlayList extends Component {
       fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
         return results.json();
       }).then(data => {
-        this.setState({songs: data});
+        this.setState({
+          songs: data
+        });
       })
       console.log(this.state.songs);
 
